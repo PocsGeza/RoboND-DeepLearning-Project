@@ -37,6 +37,8 @@ The skip connections is allow the information to retained that would be lost in 
 
 ### Model Used
 
+![architecture used](./images/paint masterpiece.png)
+
 Fully convoluitonal neural network used contains:
 - Two encoder block layers, 
 - A 1x1 convolution layer, 
