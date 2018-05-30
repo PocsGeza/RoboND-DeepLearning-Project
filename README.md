@@ -42,7 +42,7 @@ Fully convoluitonal neural network used contains:
 - A 1x1 convolution layer, 
 - Two decoder block layers.
 
-####1st convolution 
+#### 1st convolution 
 * filter size of 32 and a stride of 2, same padding
 * reduces image to half of original size 
 
@@ -72,7 +72,7 @@ Fully convoluitonal neural network used contains:
 
 Based on a lot of time (and hopefully not a to large bill) running the combinations on the AWS instance:
 
-* learning rate = 0.0015
+* learning rate = 0.002
 * batch size = 100
 * number of epochs = 40
 * steps per epoch = 200
@@ -90,7 +90,7 @@ The final score of my model is 0.4098, while the final IoU is 0.5123.
 
 ## Future Enhancements
 
-The model could be used/trained to indentify any solid object that does not cover too much of input image. The hard part would be to find/generate good learning data.
+The model could be used/trained to identify any solid object that does not cover too much of input image. The hard part would be to find/generate good learning data.
 
 To be hones:
 This project was a kind of baptism by fire for me regarding deep learning. If it is accepted I will probably not touch it for very long time. Deep learning peaked my interest but I really need to learn the math and the background details before I would voluntarily mess with this model again.
