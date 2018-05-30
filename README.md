@@ -81,6 +81,21 @@ Based on a lot of time (and hopefully not a to large bill) running the combinati
 * validation steps = 50
 * workers = 2
 
+Tuning the hyperparameters is about balancing the accuracy of the trained model, time used for training, and costs of training the model.
+
+The learning rate defines the magnitude of the steps taken when gradient descent is done. The larger the learning rate the bigger steps are taken.
+A large learning rate results in a faster training process but may result in the model getting stuck in a local minimum. Generally decreasing the learning rate result in better training of the model but it increases training time.
+
+The number of epochs is the number of training cycles the model goes through. Increasing it too much may result in the model owerfitting to the data.
+
+Validation steps are used for testing the performance of the model based on data that is not in the training set.
+
+Batch size determines how much training data is used for an epoch. Increasing it may improve the model but if the data is more then what can be fitted into memory as far as I understand swapping may occur and reduce the life of the HDD.
+
+Workers specifies the number of processes used for the training process.
+
+The parameters where set based of Slack discussions and a lot of trial and error. If training the model took to long the AWS instance had a tendency to crash (about 2 out of 5 every runs it crashed for me). 
+It is a satisfying feeling to have a computer sweating to do work for you while you go about taking care of all the thing on you To Do (sometime) list.           
 ## Training
 
 The instance provided by Udacity was used (AWS EC2 p2.xlarge instance, Nvidia K80 GPU, 4 vCPUs, 61 GB RAM). I wish I had one of these for gaming :)
